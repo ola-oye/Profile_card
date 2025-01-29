@@ -1,0 +1,134 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Rubik", serif;
+  font-weight: 400;
+  font-size: 15px;
+  color: #ffffff;
+}
+body {
+  background-color: #590000;
+  opacity: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card {
+  background-color: rgba(22, 22, 22, 0.13);
+  max-width: 600px;
+  margin: 10% 50px;
+  padding: 30px;
+  border: 2px solid #fff;
+  border-radius: 30px;
+}
+.profilePictureWrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 45px;
+}
+.profilePicture {
+  border-radius: 50%;
+}
+
+.description > div {
+  margin-bottom: 30px;
+}
+.description > div p {
+  text-align: center;
+  margin: 10px;
+}
+.name {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+#bio {
+  line-height: 1.4;
+  letter-spacing: 0.5px;
+  margin-bottom: 15px;
+}
+.bio-preview {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+#more-btn {
+  padding: 7px;
+  margin-bottom: 25px;
+  background-color: rgba(22, 22, 22, 0.13);
+  border: 1px solid #807777;
+  border-radius: 10px;
+  font-size: 14px;
+}
+#more-btn:active {
+  background-color: rgba(187, 92, 92, 0.445);
+}
+ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  list-style: none;
+  gap: 15px;
+}
+
+li,
+.label {
+  cursor: pointer;
+  border-radius: 50%;
+  transition: background-color 0.35s ease-in-out;
+}
+
+li {
+  display: inline;
+  align-items: center;
+  justify-content: center;
+  background-color: #420808;
+  width: 45px;
+  height: 45px;
+  padding: 12px 13px;
+  margin-bottom: 30px;
+}
+li:hover {
+  background-color: rgba(187, 92, 92, 0.445);
+}
+.moreInfo {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.label {
+  width: 40px;
+  height: 40px;
+  padding: 12px 11px;
+  background-color: #420808;
+}
+/* .moreInfo p {
+
+  font-size: 14px;
+} */
+.contact {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 20px;
+  row-gap: 10px;
+}
+
+.locationIcon {
+  width: 18px;
+  height: 18px;
+}
+
+@media (min-width: 600px) {
+  .card {
+    padding: 40px;
+  }
+  li {
+    width: 50px;
+    height: 50px;
+    padding: 13px 14px;
+  }
+}

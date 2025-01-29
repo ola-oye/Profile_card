@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Olaoye's Profile Card</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+    </style>
+  </head>
+  <body>
+    <div class="card">
+      <div class="profilePictureWrap">
+        <img
+          class="profilePicture"
+          src="images/Olaoye.jpg"
+          alt="Profile Picture"
+          data-testid="profilePicture"
+        />
+      </div>
+
+      <div class="description">
+        <div>
+          <p class="name" data-testid="fullName">Oyetunji Fatai Olasunkanmi</p>
+          <p class="jobTitle" data-testid="jobTitle">Frontend Engineer</p>
+        </div>
+
+        <p id="bio" class="bio-preview" data-testid="shortBio">
+          An aspiring front-end engineer, computer science undergraduate at the
+          University of Lagos, and IT support technician. I'm passionate about
+          leveraging my technical skills to create user-focused solutions and
+          provide exceptional support. I believe the best communities are built
+          on shared values, not just shared interests. Driven by this belief, I
+          actively contribute to my community by teaching web development and
+          Python programming, empowering the next generation of tech innovators.
+          I'm committed to making positive impacts through technology.
+        </p>
+
+        <button id="more-btn">Continue reading</button>
+      </div>
+
+      <ul class="socialLinks">
+        <li>
+          <a
+            data-testid="socialLinks"
+            href="https://www.linkedin.com/in/olasunkanmi-oyetunji-4a38991b0/"
+            ><img src="images/linkedin.svg" alt="Linkedin"
+          /></a>
+        </li>
+        <li>
+          <a data-testid="socialLinks" href="https://github.com/ola-oye"
+            ><img src="images/github.svg" alt="Github"
+          /></a>
+        </li>
+        <li>
+          <a data-testid="socialLinks" href="https://x.com/ola_GBolder"
+            ><img src="images/x.svg" alt="X"
+          /></a>
+        </li>
+      </ul>
+
+      <div class="contact">
+        <div class="moreInfo">
+          <div class="label">
+            <img src="images/email.svg" alt="Email" />
+          </div>
+          <p id="email" data-testid="emailAddress">
+            olasunkanmioyetunji4@gmail.com
+          </p>
+        </div>
+
+        <div class="moreInfo">
+          <div class="label">
+            <img
+              class="locationIcon"
+              src="images/location.svg"
+              alt="Current location"
+            />
+          </div>
+          <p id="location" data-testid="currentLocation">
+            Agege, Lagos, Nigeria.
+          </p>
+        </div>
+
+        <div class="moreInfo">
+          <div class="label">
+            <img src="images/clock.svg" alt="Current time UTC" />
+          </div>
+          <p id="time" data-testid="currentTimeUTC">Current time UTC</p>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
